@@ -1,6 +1,5 @@
 <?php
 
-// require 'classes/Vehicle.php';
 
 class Boat extends Vehicle {
     public function getWheelsNumberText() {
