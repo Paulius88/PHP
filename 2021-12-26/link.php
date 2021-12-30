@@ -6,7 +6,7 @@ $link = $_POST['link'] ?? null;
 $link = filter_var($link, FILTER_SANITIZE_URL);
 
 if (empty($link)) {
-    echo 'Please enter a URL';
+    echo 'link';
     exit;
 } else if (filter_var($link, FILTER_VALIDATE_URL) == false){
     echo "$link is not a valid URL";
@@ -40,7 +40,7 @@ $link = array_keys($data);
     </div>
     <br>
     <strong>
-        <a href="<?php echo "http://localhost/12-26/open.php?link={$key}"; ?>"><?php echo "http://localhost/12-26/index.php?link={$key}"; ?></a>
+        <a href="<?php echo "http://localhost/12-26/index.php?link={$key}"; ?>"><?php echo "http://localhost/12-26/index.php?link={$key}"; ?></a>
     </strong>
 </body>
 </html>
